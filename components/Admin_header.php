@@ -57,7 +57,8 @@
             <li><a href="add_product.php"><i class="bx bxs-shopping-bags"></i>Add product</a></li>
             <li><a href="view_product.php"><i class="bx bxs-food-menu"></i>view product</a></li>
             <li><a href="user_accounts.php"><i class="bx bxs-user_details"></i>Accounts</a></li>
-            <li><a href="../components/admin_logout.php" onclick="return confirm('logout from this website');"><i class="bx bx-log-out"></i>logout</a></li>
+            <li><a href="../components/admin_logout.php" onclick="return confirm('logout from this website');">
+                <i class="bx bx-log-out"></i>logout</a></li>
 
         </ul>
        </div>

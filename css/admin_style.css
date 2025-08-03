@@ -83,7 +83,7 @@ input[type='submit']:hover{
 }
 .box-container{
     display: grid;
-    grid-template-columns: repeat(autofit, minmax(30rem , 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(30rem , 1fr));
     align-items: center;
 }
 .box-container .box{
@@ -110,7 +110,7 @@ input[type='submit']:hover{
 }
 .heading img{
     margin-top: .5rem;
-    width: 150px;
+    width: 150px!important;
 }
 section,
 .post-editor{
@@ -283,7 +283,7 @@ header{
     display: none;
 }
 .profile-detail{
-     background-color: var(--white-alpha-25);
+    background-color: var(--white-alpha-25);
     border: 2px solid var(--white-alpha-40);
     backdrop-filter: var(--backdrop-filter);
     box-shadow: var(--box-shadow);
@@ -320,4 +320,86 @@ header{
 }
 .main-container{
     display: flex;
+}
+.sidebar{
+    background-color: var(--white-aplha-25);
+    backdrop-filter : var(--backdrop-filter);
+    padding-top: 2rem;
+    width:18vw;
+    height:100vh;
+    position:sticky;
+    --offset:var(--offset);
+    left:var(--offset);
+    top:var(--offset);
+    box-shadow:0px 10px opx #aaa;
+    overflow: hidden;
+    z-index:1;
+
+}
+.sidebar h5{
+    text-transform:uppercase;
+    color: var(--main-color);
+    padding:.5rem 1rem;
+    margin:.5rem 0 ;
+
+}
+.profile {
+    margin:.5rem auto;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+
+}
+.sidebar .profile{
+    margin-top: 2.5rem;
+}
+.sidebar .logo img{
+   border-radius:50%;
+   padding:.2rem;
+   border:2px solid var(--main-color);
+   
+}
+
+.sidebar .profile p{
+    margin-top:2.5rem;
+    text-transform:uppercase;
+    font-weight: bolder;
+    color:gray;
+    font-size:1rem;
+}
+.sidebar ul li{
+    padding:1rem;
+    background-color: var(--white-alpha-25);
+    border:2px solid var(--white-alpha-40);
+    backdrop-filter: var(--backdrop-filter);
+    box-shadow:var(--box-shadow);
+    position: relative;
+    transition: .5rem;
+    margin: .5rem;
+}
+.sidebar ul li::before{
+    position:absolute;
+    content:'';
+    left:0;
+    top:0;
+    height:0%;
+    width:5px;
+    background-color: var(--main-color);
+    z-index: 2;
+    transition: all 200ms linear;
+}
+.sidebar ul li:hover::before{
+    height:100%;
+}
+.sidebar .ul li i{
+    color:var(--main-color);
+    font-size:20px;
+    margin-right: 2rem;
+}
+.sidebar .ul li a{
+    text-transform: uppercase;
+    color: gray;
+    font-size: 12px;
+    font-weight: bold;
 }

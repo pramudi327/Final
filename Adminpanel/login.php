@@ -1,4 +1,4 @@
-<?php 
+  <?php 
 //  include '../components/connect.php';
 //     if (isset($_POST['submit'])){
        
@@ -22,7 +22,7 @@
 //         }
 
 //     }
-?>
+?>  
 
 <!DOCTYPE html>
 <html lang="en">
